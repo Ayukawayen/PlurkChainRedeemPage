@@ -1,0 +1,37 @@
+<html> 
+	<head> 
+		<title>PlurkChain兌換碼</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<dl>
+			<dt>你的兌換碼</dt>
+			<dd><textarea id="code" readonly="readonly">0x0100000017006320e3363048262eE2468bAd83E1E7B0473a7500008cf400000000c7b0697cb4930d1bcdd51233f9cbf25c14333e6b731462950db1f16c23a4fe0adc823d1be14f8e5740eac0d917c203182da05f0e9d65471f472dbf0db4e201baa1931b</textarea></dd>
+			
+			<dt>兌換合約位址</dt>
+			<dd><strong>Ropsten Testnet</strong><input type="text" readonly="readonly" size="48" value="0xaa106933ba5d3974e1d918e5a151df0ecd8899fc" /></dd>
+			
+			<dt>兌換方式</dt>
+			<dd><dl>
+				<dt>透過Etherscan (需安裝Metamask)</dt>
+				<dd><ol>
+					<li>前往<a href="https://ropsten.etherscan.io/address/0xaa106933ba5d3974e1d918e5a151df0ecd8899fc#writeContract">https://ropsten.etherscan.io/address/0xaa106933ba5d3974e1d918e5a151df0ecd8899fc#writeContract</a></li>
+					<li>點選<strong>Write Contract Connect with Metamask</strong></li>
+					<li>於<strong>7. redeem</strong>區塊的<strong>code (bytes)</strong>欄位輸入<em>{兌換碼}</em></li>
+					<li>點選其下的<strong>Write</strong></li>
+					<li>於Metamask界面完成操作，發送交易</li>
+				</ol></dd>
+				<dt>透過Metamask直接發送交易</dt>
+				<dd><ol>
+					<li>開啟Metamask界面，點選<strong>Send</strong></li>
+					<li>於<strong>To</strong>填入<em>{兌換合約位址}</em></li>
+					<li>於<strong>Hex Data</strong>填入<em>{兌換碼}</em></li>
+					<li>將<strong>Gas Limit</strong>設定為300000</li>
+					<li>於Metamask界面完成操作，發送交易</li>
+				</ol></dd>
+			</dl></dd>
+		</dl>
+	</body>
+</html>
+<script type="text/javascript" src="script.js"></script>

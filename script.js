@@ -1,0 +1,1 @@
+document.querySelector('#code').textContent = location.hash.substr(1);
